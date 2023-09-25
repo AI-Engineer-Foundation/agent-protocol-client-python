@@ -23,5 +23,5 @@ then
     fi
 fi
 
-npx @openapitools/openapi-generator-cli generate --global-property apis,models,supportingFiles,modelDocs=false -i ./../../schemas/openapi.yml -g python-nextgen --library asyncio --additional-properties=generateSourceCodeOnly=true,packageName=agent_protocol_client
+npx @openapitools/openapi-generator-cli generate --global-property apis,models,supportingFiles,modelDocs=false -i $(curl -fsSL https://raw.githubusercontent.com/AI-Engineers-Foundation/agent-protocol/main/schemas/openapi.yml) -g python-nextgen --library asyncio --additional-properties=generateSourceCodeOnly=true,packageName=agent_protocol_client
 black .
