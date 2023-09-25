@@ -33,7 +33,7 @@ async def main():
 
         while (
             step := await api_instance.execute_agent_task_step(
-                task_id=task_id, step_request_body=StepRequestBody(input=i)
+                task_id=task_id, step_request_body=StepRequestBody(input=str(i))
             )
         ) and step.is_last is False:
             print("The response of AgentApi->execute_agent_task_step:\n")
