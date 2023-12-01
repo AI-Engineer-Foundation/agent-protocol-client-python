@@ -1,3 +1,4 @@
+# THIS REPO HAS BEEN MERGED INTO THE MAIN REPO: https://github.com/AI-Engineer-Foundation/agent-protocol/tree/main/packages/client/python
 # Agent Communication Protocol - Python Client
 
 Python client for Agent Communication Protocol. This client simplifies the communication with the agent.
